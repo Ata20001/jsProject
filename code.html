@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="code.css">
+</head>
+<body>
+
+  <div class="login-container">
+    <h2>Login</h2>
+    <form id="loginForm">
+
+      <div class="input-group">
+        <i class="fa-solid fa-user"></i>
+      <label for="username">Username</label>
+         <input type="text" id="username" name="username" placeholder="Username">
+      </div>
+
+      <div class="input-group">
+        <i class="fa-solid fa-key"></i>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Password">
+      </div>
+      
+      <button type="button" onclick="checkLogin()">Login</button>
+      <p id="error-message" class="error-message"></p>
+    </form>
+
+    <div class="forgot-password">
+      <a href="#" id="forgotPasswordLink">Forgot your password?</a>
+  </div>
+  
+  <footer>
+    <p>&copy; 2005 - 2025 OrangeHRM, Inc. All rights reserved</p>
+    <p>OrangeHRM OS 5.7</p>
+</footer>
+
+  </div>
+
+  <script src="code.js"></script>
+
+</body>
+</html>
